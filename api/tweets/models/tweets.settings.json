@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tweets",
+  "info": {
+    "name": "Tweets",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "unique": false,
+      "required": true,
+      "maxLength": 200
+    },
+    "copy": {
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

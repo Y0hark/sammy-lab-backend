@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_editor_components_texts",
+  "info": {
+    "name": "text",
+    "icon": "quote-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

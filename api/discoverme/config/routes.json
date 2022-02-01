@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/discoverme",
+      "handler": "discoverme.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/discoverme",
+      "handler": "discoverme.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/discoverme",
+      "handler": "discoverme.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

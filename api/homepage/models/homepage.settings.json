@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "editor-components.images",
+        "editor-components.text"
+      ]
+    }
+  }
+}

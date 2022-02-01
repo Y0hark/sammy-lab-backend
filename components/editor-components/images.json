@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_editor_components_images",
+  "info": {
+    "name": "images",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

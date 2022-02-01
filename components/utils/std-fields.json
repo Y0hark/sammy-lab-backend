@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_utils_std_fields",
+  "info": {
+    "name": "stdFields",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "copy": {
+      "type": "richtext",
+      "required": true
+    },
+    "publicationDate": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
