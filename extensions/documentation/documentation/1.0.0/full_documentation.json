@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/01/2022 3:25:09 PM"
+    "x-generation-date": "02/02/2022 3:13:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5133,7 +5133,8 @@
                       "type": "string",
                       "enum": [
                         "editor-components.images",
-                        "editor-components.text"
+                        "editor-components.text",
+                        "editor-components.code-block"
                       ]
                     },
                     "id": {
@@ -5220,7 +5221,8 @@
                       "type": "string",
                       "enum": [
                         "editor-components.images",
-                        "editor-components.text"
+                        "editor-components.text",
+                        "editor-components.code-block"
                       ]
                     },
                     "id": {
@@ -5233,6 +5235,31 @@
                   "required": [
                     "id",
                     "text"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "editor-components.images",
+                        "editor-components.text",
+                        "editor-components.code-block"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "language": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "language"
                   ]
                 }
               ]
@@ -5280,7 +5307,8 @@
                       "type": "string",
                       "enum": [
                         "editor-components.images",
-                        "editor-components.text"
+                        "editor-components.text",
+                        "editor-components.code-block"
                       ]
                     },
                     "id": {
@@ -5367,7 +5395,8 @@
                       "type": "string",
                       "enum": [
                         "editor-components.images",
-                        "editor-components.text"
+                        "editor-components.text",
+                        "editor-components.code-block"
                       ]
                     },
                     "id": {
@@ -5380,6 +5409,31 @@
                   "required": [
                     "id",
                     "text"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "editor-components.images",
+                        "editor-components.text",
+                        "editor-components.code-block"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "language": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "language"
                   ]
                 }
               ]

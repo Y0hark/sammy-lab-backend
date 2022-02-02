@@ -48,7 +48,8 @@
       "type": "dynamiczone",
       "components": [
         "editor-components.images",
-        "editor-components.text"
+        "editor-components.text",
+        "editor-components.code-block"
       ]
     }
   }

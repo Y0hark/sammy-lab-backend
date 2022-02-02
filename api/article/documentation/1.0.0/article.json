@@ -713,7 +713,8 @@
                       "type": "string",
                       "enum": [
                         "editor-components.images",
-                        "editor-components.text"
+                        "editor-components.text",
+                        "editor-components.code-block"
                       ]
                     },
                     "id": {
@@ -800,7 +801,8 @@
                       "type": "string",
                       "enum": [
                         "editor-components.images",
-                        "editor-components.text"
+                        "editor-components.text",
+                        "editor-components.code-block"
                       ]
                     },
                     "id": {
@@ -813,6 +815,31 @@
                   "required": [
                     "id",
                     "text"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "editor-components.images",
+                        "editor-components.text",
+                        "editor-components.code-block"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "language": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "language"
                   ]
                 }
               ]
@@ -860,7 +887,8 @@
                       "type": "string",
                       "enum": [
                         "editor-components.images",
-                        "editor-components.text"
+                        "editor-components.text",
+                        "editor-components.code-block"
                       ]
                     },
                     "id": {
@@ -947,7 +975,8 @@
                       "type": "string",
                       "enum": [
                         "editor-components.images",
-                        "editor-components.text"
+                        "editor-components.text",
+                        "editor-components.code-block"
                       ]
                     },
                     "id": {
@@ -960,6 +989,31 @@
                   "required": [
                     "id",
                     "text"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "editor-components.images",
+                        "editor-components.text",
+                        "editor-components.code-block"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "language": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "language"
                   ]
                 }
               ]
