@@ -839,7 +839,8 @@
                   },
                   "required": [
                     "id",
-                    "language"
+                    "language",
+                    "code"
                   ]
                 }
               ]
@@ -1013,7 +1014,8 @@
                   },
                   "required": [
                     "id",
-                    "language"
+                    "language",
+                    "code"
                   ]
                 }
               ]

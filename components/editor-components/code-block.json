@@ -2,7 +2,8 @@
   "collectionName": "components_editor_components_code_blocks",
   "info": {
     "name": "code-block",
-    "icon": "laptop-code"
+    "icon": "laptop-code",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,7 +12,8 @@
       "required": true
     },
     "code": {
-      "type": "richtext"
+      "type": "text",
+      "required": true
     }
   }
 }
