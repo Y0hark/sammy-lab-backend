@@ -848,8 +848,7 @@
           },
           "writer": {
             "required": [
-              "id",
-              "surname"
+              "id"
             ],
             "properties": {
               "id": {

@@ -516,8 +516,7 @@
     "schemas": {
       "Writer": {
         "required": [
-          "id",
-          "surname"
+          "id"
         ],
         "properties": {
           "id": {
@@ -658,9 +657,6 @@
         }
       },
       "NewWriter": {
-        "required": [
-          "surname"
-        ],
         "properties": {
           "name": {
             "type": "string"

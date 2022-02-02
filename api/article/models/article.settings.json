@@ -53,8 +53,8 @@
       ]
     },
     "writer": {
-      "model": "writer",
-      "via": "articles"
+      "via": "articles",
+      "model": "writer"
     },
     "publication_date": {
       "type": "date"
