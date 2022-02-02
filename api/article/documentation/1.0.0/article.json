@@ -846,6 +846,45 @@
               ]
             }
           },
+          "writer": {
+            "required": [
+              "id",
+              "surname"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "picture": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "surname": {
+                "type": "string"
+              },
+              "articles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "publication_date": {
+            "type": "string",
+            "format": "date"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1020,6 +1059,13 @@
                 }
               ]
             }
+          },
+          "writer": {
+            "type": "string"
+          },
+          "publication_date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",

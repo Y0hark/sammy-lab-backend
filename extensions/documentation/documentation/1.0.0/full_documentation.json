@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/02/2022 3:59:31 PM"
+    "x-generation-date": "02/02/2022 4:46:31 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5266,6 +5266,45 @@
               ]
             }
           },
+          "writer": {
+            "required": [
+              "id",
+              "surname"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "picture": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "surname": {
+                "type": "string"
+              },
+              "articles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "publication_date": {
+            "type": "string",
+            "format": "date"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5440,6 +5479,13 @@
                 }
               ]
             }
+          },
+          "writer": {
+            "type": "string"
+          },
+          "publication_date": {
+            "type": "string",
+            "format": "date"
           },
           "published_at": {
             "type": "string",
@@ -6087,7 +6133,8 @@
       },
       "Writer": {
         "required": [
-          "id"
+          "id",
+          "surname"
         ],
         "properties": {
           "id": {
@@ -6165,16 +6212,87 @@
           },
           "email": {
             "type": "string"
+          },
+          "surname": {
+            "type": "string"
+          },
+          "articles": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description",
+                "slug",
+                "cover"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "cover": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "comments_comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "content": {
+                  "type": "dynamiczone"
+                },
+                "writer": {
+                  "type": "string"
+                },
+                "publication_date": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
       "NewWriter": {
+        "required": [
+          "surname"
+        ],
         "properties": {
           "name": {
             "type": "string"
           },
           "email": {
             "type": "string"
+          },
+          "surname": {
+            "type": "string"
+          },
+          "articles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

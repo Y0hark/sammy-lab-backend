@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "writers",
   "info": {
-    "name": "Writer"
+    "name": "Writer",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -19,10 +21,19 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "email": {
       "type": "string"
+    },
+    "surname": {
+      "type": "string",
+      "required": true
+    },
+    "articles": {
+      "via": "writer",
+      "collection": "article"
     }
   }
 }
