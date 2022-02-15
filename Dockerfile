@@ -14,6 +14,8 @@ COPY favicon.ico .
 
 COPY api/ api/
 
+COPY admin/ admin/
+
 COPY config/ config/
 
 COPY data/ data/
