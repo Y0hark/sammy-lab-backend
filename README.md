@@ -1,6 +1,6 @@
 ## Current Status
 
-[![Build Status](http://yohark.de:8080/job/sammy-lab-back/2/badge/icon)](http://yohark.de:8080/job/sammy-lab-back/2/)
+http://yohark.de:8080/job/sammy-lab-back/badge/icon
 
 # Strapi application
 
