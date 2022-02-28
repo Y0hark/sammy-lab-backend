@@ -2,23 +2,19 @@
   "kind": "singleType",
   "collectionName": "homepages",
   "info": {
-    "name": "Homepage",
-    "description": ""
+    "name": "homepage"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "Title": {
       "type": "string"
     },
-    "Description": {
-      "type": "string",
-      "maxLength": 500
-    },
-    "content": {
+    "Content": {
       "type": "dynamiczone",
       "components": [
         "editor-components.images",

@@ -321,11 +321,7 @@
           "Title": {
             "type": "string"
           },
-          "Description": {
-            "type": "string",
-            "maxLength": 500
-          },
-          "content": {
+          "Content": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -439,6 +435,10 @@
                 }
               ]
             }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
@@ -447,11 +447,7 @@
           "Title": {
             "type": "string"
           },
-          "Description": {
-            "type": "string",
-            "maxLength": 500
-          },
-          "content": {
+          "Content": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -565,6 +561,10 @@
                 }
               ]
             }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
