@@ -25,10 +25,6 @@ pipeline {
         stage('Docker image') {
             steps {
                 echo 'Building docker image..'
-				echo 'stoping last container'
-				sh 'docker container rm -f strapi-sammy-lab'
-				echo 'removing last image'
-				sh 'docker image rm -f strapi-sammy-lab'
 				echo 'building new image'
 				sh 'docker build -t strapi-sammy-lab .'
 				echo 'starting new container'
