@@ -1,8 +1,9 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "homes",
   "info": {
-    "name": "homepage"
+    "name": "home",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Content": {
+    "content": {
       "type": "dynamiczone",
       "components": [
         "editor-components.images",

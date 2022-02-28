@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/homepage": {
+    "/home": {
       "get": {
         "deprecated": false,
-        "description": "Find all the homepage's records",
+        "description": "Find all the home's records",
         "responses": {
           "200": {
-            "description": "Retrieve homepage document(s)",
+            "description": "Retrieve home document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Homepage"
+                    "$ref": "#/components/schemas/Home"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Home"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single homepage record",
+        "description": "Update a single home record",
         "responses": {
           "200": {
-            "description": "Retrieve homepage document(s)",
+            "description": "Retrieve home document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Homepage"
+                  "$ref": "#/components/schemas/Home"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Home"
         ],
         "requestBody": {
           "description": "",
@@ -247,7 +247,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewHomepage"
+                "$ref": "#/components/schemas/NewHome"
               }
             }
           }
@@ -256,10 +256,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single homepage record",
+        "description": "Delete a single home record",
         "responses": {
           "200": {
-            "description": "deletes a single homepage based on the ID supplied",
+            "description": "deletes a single home based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -302,7 +302,7 @@
         },
         "summary": "",
         "tags": [
-          "Homepage"
+          "Home"
         ],
         "parameters": []
       }
@@ -310,7 +310,7 @@
   },
   "components": {
     "schemas": {
-      "Homepage": {
+      "Home": {
         "required": [
           "id"
         ],
@@ -318,10 +318,10 @@
           "id": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Content": {
+          "content": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -442,12 +442,12 @@
           }
         }
       },
-      "NewHomepage": {
+      "NewHome": {
         "properties": {
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Content": {
+          "content": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -578,7 +578,7 @@
   },
   "tags": [
     {
-      "name": "Homepage"
+      "name": "Home"
     }
   ]
 }
