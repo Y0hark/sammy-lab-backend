@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/projects": {
+    "/tags": {
       "get": {
         "deprecated": false,
-        "description": "Find all the projects's records",
+        "description": "Find all the tags's records",
         "responses": {
           "200": {
-            "description": "Retrieve projects document(s)",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Projects"
+                    "$ref": "#/components/schemas/Tags"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Projects"
+          "Tags"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new projects record",
+        "description": "Create a new tags record",
         "responses": {
           "200": {
-            "description": "Retrieve projects document(s)",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Projects"
+                  "$ref": "#/components/schemas/Tags"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Projects"
+          "Tags"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProjects"
+                "$ref": "#/components/schemas/NewTags"
               }
             }
           }
         }
       }
     },
-    "/projects/count": {
+    "/tags/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of projects documents",
+        "description": "Retrieve the number of tags documents",
         "responses": {
           "200": {
-            "description": "Retrieve projects document(s)",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Projects"
+          "Tags"
         ],
         "parameters": []
       }
     },
-    "/projects/{id}": {
+    "/tags/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one projects record",
+        "description": "Find one tags record",
         "responses": {
           "200": {
-            "description": "Retrieve projects document(s)",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Projects"
+                  "$ref": "#/components/schemas/Tags"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Projects"
+          "Tags"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single projects record",
+        "description": "Update a single tags record",
         "responses": {
           "200": {
-            "description": "Retrieve projects document(s)",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Projects"
+                  "$ref": "#/components/schemas/Tags"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Projects"
+          "Tags"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProjects"
+                "$ref": "#/components/schemas/NewTags"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single projects record",
+        "description": "Delete a single tags record",
         "responses": {
           "200": {
-            "description": "deletes a single projects based on the ID supplied",
+            "description": "deletes a single tags based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Projects"
+          "Tags"
         ],
         "parameters": [
           {
@@ -514,171 +514,16 @@
   },
   "components": {
     "schemas": {
-      "Projects": {
+      "Tags": {
         "required": [
           "id",
-          "title"
+          "name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "title": {
-            "type": "string"
-          },
-          "cover": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "description": {
-            "type": "string"
-          },
-          "tags": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "article": {
-            "required": [
-              "id",
-              "title",
-              "description",
-              "slug",
-              "cover"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "slug": {
-                "type": "uid"
-              },
-              "cover": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string"
-              },
-              "comments_comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "content": {
-                "type": "dynamiczone"
-              },
-              "writer": {
-                "type": "string"
-              },
-              "publication_date": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "link": {
-            "type": "string"
-          },
-          "git": {
+          "name": {
             "type": "string"
           },
           "published_at": {
@@ -687,30 +532,12 @@
           }
         }
       },
-      "NewProjects": {
+      "NewTags": {
         "required": [
-          "title"
+          "name"
         ],
         "properties": {
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "tags": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "article": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "git": {
+          "name": {
             "type": "string"
           },
           "published_at": {
@@ -729,7 +556,7 @@
   },
   "tags": [
     {
-      "name": "Projects"
+      "name": "Tags"
     }
   ]
 }

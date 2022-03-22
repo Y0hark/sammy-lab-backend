@@ -12,10 +12,33 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tags"
+    },
+    "article": {
+      "model": "article"
+    },
     "link": {
       "type": "string"
     },
-    "title": {
+    "git": {
       "type": "string"
     }
   }
