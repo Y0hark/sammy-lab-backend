@@ -31,7 +31,7 @@ pipeline {
 				echo 'Removing outdated container...'
 				sh 'docker rm -f container strapi-sammy-lab'
 				echo 'starting new container'
-				sh 'docker run -d --name strapi-sammy-lab -p 1338:1337 strapi-sammy-lab:latest'
+				sh 'docker run -d --name strapi-sammy-lab --net nginx-proxy -e VIRTUAL_HOST=strapisammy.yohark.de strapi-sammy-lab:latest'
             }
         }
     }

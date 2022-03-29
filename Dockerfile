@@ -26,6 +26,6 @@ COPY extensions/ extensions/
 
 RUN npm run build --clean
 
-EXPOSE 1337
+EXPOSE 80
 
 CMD ["npm", "start"]
