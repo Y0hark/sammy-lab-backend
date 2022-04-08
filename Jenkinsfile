@@ -26,12 +26,12 @@ pipeline {
             steps {
                 echo 'Building docker image..'
 				echo 'building new image'
-				sh 'sudo docker build -t strapi-sammy-lab .'
+				sh 'docker build -t strapi-sammy-lab .'
 				echo 'Image built successfully.'
 				echo 'Removing outdated container...'
-				sh 'sudo docker rm -f container strapi-sammy-lab'
+				sh 'docker rm -f container strapi-sammy-lab'
 				echo 'starting new container'
-				sh 'sudo docker run -d --name strapi-sammy-lab -p 1338:1337 strapi-sammy-lab:latest'
+				sh 'docker run -d --name strapi-sammy-lab -p 1338:1337 strapi-sammy-lab:latest'
             }
         }
     }
