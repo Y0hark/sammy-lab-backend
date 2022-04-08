@@ -6,6 +6,8 @@ WORKDIR /backend
 
 COPY package.json .
 
+COPY .env .
+
 RUN npm install
 
 COPY favicon.ico .
