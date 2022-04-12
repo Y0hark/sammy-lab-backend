@@ -2,7 +2,9 @@ FROM strapi/base
 
 ENV NODE_ENV production
 
-WORKDIR /backend
+RUN mkdir services/sammylab/
+
+WORKDIR /sammylab
 
 COPY package.json .
 
